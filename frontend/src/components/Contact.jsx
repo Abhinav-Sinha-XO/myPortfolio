@@ -25,7 +25,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5001/api/contacts", {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/contacts`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
