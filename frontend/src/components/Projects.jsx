@@ -1,100 +1,158 @@
 const Projects = () => {
   return (
-    <div className="flex min-h-screen pt-20 pb-5">
-      <div className="flex flex-col md:flex-row bg-black w-full h-150 justify-between p-8 gap-8 ">
-        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-          <img
-            className="w-full h-48 object-cover"
-            src="./Weather.png"
-            alt="Project"
-          />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">Weather</div>
-            <p className="text-gray-700 text-base">
-              Real-Time Weather Updates – Displays the current temperature,
-              humidity, wind speed, and atmospheric pressure for a selected
-              location.
-            </p>
-          </div>
-          <div className="px-6 pt-1 pb-2 ">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #react
-            </span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #tailwind
-            </span>
-            <div className="mt-4">
+    <div className="min-h-screen pt-20 pb-5 bg-gradient-to-b from-gray-900 to-black">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold text-white text-center mb-12">
+          My Projects
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Weather Project Card */}
+          <div className="bg-white/10 backdrop-blur-lg rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-300 border border-gray-700">
+            <div className="relative group">
+              <img
+                className="w-full h-56 object-contain brightness-90 group-hover:brightness-100 transition-all duration-300"
+                src="./Weather.png"
+                alt="Weather Project"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
+            <div className="p-6">
+              <h3 className="font-bold text-2xl text-white mb-3">
+                Weather App
+              </h3>
+              <p className="text-gray-300 mb-4">
+                Real-Time Weather Updates – Displays the current temperature,
+                humidity, wind speed, and atmospheric pressure for a selected
+                location.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 text-sm font-medium text-emerald-400 bg-emerald-400/10 rounded-full">
+                  #react
+                </span>
+                <span className="px-3 py-1 text-sm font-medium text-blue-400 bg-blue-400/10 rounded-full">
+                  #tailwind
+                </span>
+              </div>
               <a
                 href="https://weather-app-xo.netlify.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 font-medium"
+                className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-300"
               >
                 Visit Website
+                <svg
+                  className="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
               </a>
             </div>
           </div>
-        </div>
-        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-          <img
-            className="w-full h-48 object-cover"
-            src="./paytm.png"
-            alt="Project"
-          />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">Invertis-payments</div>
-            <p className="text-gray-700 text-base">
-              Easy Money Transfers – Send and receive money instantly using UPI,
-              bank accounts, or wallets.
-            </p>
-          </div>
-          <div className="px-6 pt-8 pb-2">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #react
-            </span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #tailwind
-            </span>
-            <div className="mt-4">
+
+          {/* Invertis-payments Card */}
+          <div className="bg-white/10 backdrop-blur-lg rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-300 border border-gray-700">
+            <div className="relative group">
+              <img
+                className="w-full h-56 object-contain brightness-90 group-hover:brightness-100 transition-all duration-300"
+                src="./paytm.png"
+                alt="Payments Project"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
+            <div className="p-6">
+              <h3 className="font-bold text-2xl text-white mb-3">
+                Invertis-payments
+              </h3>
+              <p className="text-gray-300 mb-4">
+                Easy Money Transfers – Send and receive money instantly using
+                UPI, bank accounts, or wallets.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 text-sm font-medium text-emerald-400 bg-emerald-400/10 rounded-full">
+                  #react
+                </span>
+                <span className="px-3 py-1 text-sm font-medium text-blue-400 bg-blue-400/10 rounded-full">
+                  #tailwind
+                </span>
+              </div>
               <a
                 href="https://ephemeral-youtiao-46cf3b.netlify.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 font-medium"
+                className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-300"
               >
                 Visit Website
+                <svg
+                  className="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
               </a>
             </div>
           </div>
-        </div>
-        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-          <img
-            className="w-full h-48 object-cover"
-            src="../Spotify.png"
-            alt="Project"
-          />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">Spotify-Clone</div>
-            <p className="text-gray-700 text-base">
-              Music Streaming – Play high-quality music on demand with seamless
-              streaming.
-            </p>
-          </div>
-          <div className="px-6 pt-12 pb-2">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #react
-            </span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #tailwind
-            </span>
-            <div className="mt-4">
+
+          {/* Spotify Clone Card */}
+          <div className="bg-white/10 backdrop-blur-lg rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-300 border border-gray-700">
+            <div className="relative group">
+              <img
+                className="w-full h-56 object-contain brightness-90 group-hover:brightness-100 transition-all duration-300"
+                src="../Spotify.png"
+                alt="Spotify Clone"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
+            <div className="p-6">
+              <h3 className="font-bold text-2xl text-white mb-3">
+                Spotify Clone
+              </h3>
+              <p className="text-gray-300 mb-4">
+                Music Streaming – Play high-quality music on demand with
+                seamless streaming.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 text-sm font-medium text-emerald-400 bg-emerald-400/10 rounded-full">
+                  #react
+                </span>
+                <span className="px-3 py-1 text-sm font-medium text-blue-400 bg-blue-400/10 rounded-full">
+                  #tailwind
+                </span>
+              </div>
               <a
                 href="https://spotify-clone-gni9f7xjw-abhinav-sinhas-projects-dd096591.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 font-medium"
+                className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-300"
               >
                 Visit Website
+                <svg
+                  className="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
               </a>
             </div>
           </div>
