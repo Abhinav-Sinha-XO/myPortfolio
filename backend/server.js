@@ -13,7 +13,7 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: "http://localhost:5174", // Your frontend URL
+    origin: process.env.FRONTEND_URL, // Use environment variable for frontend URL
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type"],
   })
