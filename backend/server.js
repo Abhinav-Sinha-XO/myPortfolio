@@ -13,7 +13,7 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: "https://my-portfolio-jw6i.vercel.app", // Updated frontend URL
+    origin: process.env.FRONTEND_URL, // Updated frontend URL
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type"],
   })
