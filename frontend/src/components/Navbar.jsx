@@ -130,7 +130,7 @@ const Navbar = () => {
             About
           </Link>
           <Link
-            to="/contact"
+            to="/contacts"
             className={`block py-2 px-4 text-sm ${
               isProjectsPage
                 ? "hover:bg-gray-800 text-white"
